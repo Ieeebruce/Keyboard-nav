@@ -69,7 +69,7 @@ function Event() {
                 keyboard.target.innerText = key;
             })
         })
-        wordTable[i].addEventListener('click', () => {
+        wordTable[i].addEventListener('click', (getclick) => {
             let key = getclick.target.innerText;
             let website = key;
             if (key.length === 1) {
