@@ -52,7 +52,7 @@ function Event() {
         let website = hash[key];
         wordTable[i].addEventListener('mouseenter', (keyboard) => {
             let img = document.createElement('img');
-            img.src = '/img/编辑.svg';
+            img.src = './img/bj.svg';
             img.id = key;
             img.className = 'edit';
             img.addEventListener('click', (e) => {
