@@ -69,6 +69,16 @@ function Event() {
                 keyboard.target.innerText = key;
             })
         })
+        wordTable[i].addEventListener('click', () => {
+            let key = getclick.target.innerText;
+            let website = key;
+            if (key.length === 1) {
+                website = hash[key];
+            }
+            if (website) {
+                window.open('https://' + website, '_blank')
+            } else return;
+        })
     }
 }
 Init();
@@ -86,19 +96,15 @@ Event();
 ! function () {
     document.onkeypress = function (getkeypress) {
         let key = getkeypress.key.toUpperCase();
-        let website = hash[key];
-        if (website) {
-            window.open('https://' + website, '_blank')
-        } else return;
-    }
-    document.body.onclick = function (getclick) {
-        let key = getclick.target.innerText;
-        let website = key;
-        if (key.length === 1) {
-            website = hash[key];
+        let keycode = getkeypress.keyCode
+        if (keycode == 32) {
+            switchLight();
+        } else if (keycode >= 97 && keycode <= 122) {
+            let website = hash[key];
+            if (website) {
+                window.open('https://' + website, '_blank')
+            } else return;
         }
-        if (website) {
-            window.open('https://' + website, '_blank')
-        } else return;
+
     }
 }.call();
