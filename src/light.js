@@ -13,5 +13,4 @@ var switchLight = function () {
     light = true;
   }
 }
-
 $lightswitch.onclick = switchLight;
