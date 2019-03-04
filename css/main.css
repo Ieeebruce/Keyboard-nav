@@ -1,6 +1,6 @@
 :root{--text-shadow:2px 2px 3px rgba(255,255,255,.4),-2px 2px 3px rgba(255,255,255,.4),2px -2px 3px rgba(255,255,255,.4),-2px -2px 3px rgba(255,255,255,.4);--box-shadow-light:0 1px 0 rgba(255,255,255,.6),0 1px 4px rgba(255,255,255,.3);--box-shadow:2px 2px 2px rgba(0,0,0,.5)}
 *{margin:0;padding:0;box-sizing:border-box}
-body.light{background-color:#ddd;background-image:url(../img/alum.png)}
+body.light{background-image:url(../img/alum.png)}
 body.night{background-color:#222}
 .night li{box-shadow:0 1px 0 rgba(255,255,255,.6),0 1px 4px rgba(255,255,255,.3);text-shadow:2px 2px 3px rgba(255,255,255,.4),-2px 2px 3px rgba(255,255,255,.4),2px -2px 3px rgba(255,255,255,.4),-2px -2px 3px rgba(255,255,255,.4)}
 #CssGaga{content:"190304151305,dep,334"}
