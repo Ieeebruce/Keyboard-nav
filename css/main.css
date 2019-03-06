@@ -2,4 +2,3 @@
 body.light{background-image:url(../img/alum.png)}
 body.night{background-color:#222}
 .night li{box-shadow:0 1px 0 rgba(255,255,255,.6),0 1px 4px rgba(255,255,255,.3);text-shadow:2px 2px 3px rgba(255,255,255,.4),-2px 2px 3px rgba(255,255,255,.4),2px -2px 3px rgba(255,255,255,.4),-2px -2px 3px rgba(255,255,255,.4)}
-#CssGaga{content:"190304151305,dep,334"}
